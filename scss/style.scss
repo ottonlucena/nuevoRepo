@@ -6,6 +6,14 @@
 /*variables*/ 
 $fontLayout : 'Roboto Condensed', sans-serif;
 
+/*mixin*/ 
+@mixin styleFont($fontLayout, $color, $tam, $tipo) {
+    font-family: $fontLayout;
+    color: $color;
+    font-size: $tam;
+    font-weight: $tipo;
+}
+
 
 /*grilla y header*/
 .grilla_Principal{
@@ -34,8 +42,8 @@ $fontLayout : 'Roboto Condensed', sans-serif;
     }
 
     .p_Menu{
-        font-weight: bold;
-        color: black;
+        @include styleFont($fontLayout, black, 20px, bold);
+        background-color: rgb(16, 232, 240);
     }
 }
 
@@ -52,7 +60,8 @@ $fontLayout : 'Roboto Condensed', sans-serif;
     }
 
     .subtitulo_Index{
-        font-family: $fontLayout;
+        @include styleFont($fontLayout, #b9c50b, auto, bold);
+        border: 3px solid;
     }
 
     .titulo_Iframe{
