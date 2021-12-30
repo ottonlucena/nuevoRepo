@@ -30,7 +30,7 @@ $fontLayout : 'Roboto Condensed', sans-serif;
     }
 
     .img_Header{
-        width: 60px;
+        width: 80px;
     }
 
     .ul_nav{
@@ -59,8 +59,14 @@ $fontLayout : 'Roboto Condensed', sans-serif;
         font-family: $fontLayout;
     }
 
+    .titulo_Index span{
+        color: red;
+        background-color: rgb(16, 232, 240);
+        display: inline-block;
+    }
+
     .subtitulo_Index{
-        @include styleFont($fontLayout, #b9c50b, auto, bold);
+        @include styleFont($fontLayout, #2714d8, auto, bold);
         border: 3px solid;
     }
 
@@ -81,6 +87,7 @@ $fontLayout : 'Roboto Condensed', sans-serif;
 
 /*contacto*/
 .content {
+    grid-area: main;
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
@@ -184,7 +191,34 @@ $fontLayout : 'Roboto Condensed', sans-serif;
     }
 }
 
+@media only screen and (max-width:600px){
 
+    .titulo_Index{
+        font-size: 30px;
+        
+    }
+    span{
+        display:inline-block;
+        font-size: 35px;
+    }
+    .titulo_Contacto{
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width:601px){
+    .titulo_Index{
+        font-size: 60px;
+        padding: 20px;  
+    }
+    span{
+        display:inline-block;
+        font-size: 60px;
+    }
+    .titulo_Contacto{
+        margin-top: 50px;
+    }
+}
 
 
 
