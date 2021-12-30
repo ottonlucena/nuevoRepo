@@ -28,11 +28,9 @@
 /*main-index*/
 .principal_Main {
   grid-area: main; }
-  .principal_Main .imgCarousel {
-    height: auto; }
   .principal_Main .titulo_Index {
     font-family: "Roboto Condensed", sans-serif; }
-  .principal_Main .titulo_Index span {
+  .principal_Main .span_Titulo {
     color: red;
     background-color: #10e8f0;
     display: inline-block; }
@@ -121,21 +119,28 @@
   .principal_Footer .logo_Footer {
     width: 80px; }
 
+/*media queries*/
 @media only screen and (max-width: 600px) {
   .titulo_Index {
     font-size: 30px; }
-  span {
+  .span_Titulo {
     display: inline-block;
     font-size: 35px; }
   .titulo_Contacto {
     margin-top: 30px; } }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 600px) {
   .titulo_Index {
     font-size: 60px;
     padding: 20px; }
-  span {
+  .span_Titulo {
     display: inline-block;
     font-size: 60px; }
   .titulo_Contacto {
-    margin-top: 50px; } }
+    margin-top: 50px; }
+  .imgCarousel {
+    height: auto; } }
+
+@media only screen and (min-width: 992px) {
+  .imgCarousel {
+    height: 650px; } }
