@@ -48,6 +48,14 @@
     transform: scale(0.6);
     transition: 3s all; }
 
+/*Productos*/
+.titulo_Productos {
+  font-weight: bold;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #0e0e0e;
+  text-align: center;
+  background-color: #10e8f0; }
+
 /*contacto*/
 .content {
   grid-area: main;
@@ -127,7 +135,9 @@
     display: inline-block;
     font-size: 35px; }
   .titulo_Contacto {
-    margin-top: 30px; } }
+    margin-top: 30px; }
+  .p_Footer {
+    font-size: 10.5px; } }
 
 @media only screen and (min-width: 600px) {
   .titulo_Index {

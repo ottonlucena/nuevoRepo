@@ -54,6 +54,7 @@ $fontLayout : 'Roboto Condensed', sans-serif;
 /*main-index*/
 .principal_Main{
     grid-area: main;
+    
 
     .titulo_Index{
         font-family: $fontLayout;
@@ -83,7 +84,15 @@ $fontLayout : 'Roboto Condensed', sans-serif;
         transition: 3s all;
     }
 }
-    
+
+/*Productos*/
+.titulo_Productos{
+    font-weight: bold;
+    font-family: $fontLayout;
+    color: rgb(14, 14, 14);
+    text-align: center;
+    background-color: rgb(16, 232, 240);
+}
 
 /*contacto*/
 .content {
@@ -205,6 +214,10 @@ $fontLayout : 'Roboto Condensed', sans-serif;
     }
     .titulo_Contacto{
         margin-top: 30px;
+    }
+
+    .p_Footer{
+        font-size: 10.5px;
     }
 }
 
