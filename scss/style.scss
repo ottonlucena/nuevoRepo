@@ -25,6 +25,22 @@ $fontLayout : 'Roboto Condensed', sans-serif;
     background-color: rgb(16, 232, 240);
 }
 
+@mixin bottonIr {
+    text-decoration: none;
+    border: 4px solid white;
+    padding: 20px;
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+@mixin mainFlex {
+    grid-area: main;
+    display: flex;
+    font-family: $fontLayout;
+    height: 100%;
+}
+
 
 /*grilla y header*/
 .grilla_Principal{
@@ -105,10 +121,7 @@ $fontLayout : 'Roboto Condensed', sans-serif;
 
 /*ofertas*/ 
 .main_Ofertas{
-    grid-area: main;
-    display: flex;
-    font-family: $fontLayout;
-    height: 100%;
+    @include mainFlex;
 
     .pantalla_Dividida{
         display: flex;
@@ -124,17 +137,11 @@ $fontLayout : 'Roboto Condensed', sans-serif;
             }
 
             .ir_Ofertas{
-                text-decoration: none;
-                border: 4px solid white;
-                padding: 20px;
-                color: white;
-                border-radius: 30px;
-                font-weight: bold;
+                @include bottonIr;
             }
         }
     
         .div_Derecha{
-            
             background-size: cover;
             background-position: center;
             width: 50%;
@@ -236,6 +243,40 @@ $fontLayout : 'Roboto Condensed', sans-serif;
         padding: 0;
     }
 }
+
+/*ubicacion*/ 
+.main_Ubicacion{
+    grid-area: main;
+    font-family: $fontLayout;
+
+    .div_Titulo_Ubicacion{
+        background: slategrey;
+        justify-content: center;
+        text-align: center;
+        display: block;
+
+        .titulo_Ubicacion{
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .p_Ubicacion{
+            font-size: 20px;
+            color: black;
+        }
+    }
+
+
+
+
+
+        .iframe_Ubicacion{
+            width: 90%;
+        }
+    
+}
+
 
 /*footer*/
 .principal_Footer{

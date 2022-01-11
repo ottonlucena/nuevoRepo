@@ -150,6 +150,25 @@
     list-style: none;
     padding: 0; }
 
+/*ubicacion*/
+.main_Ubicacion {
+  grid-area: main;
+  font-family: "Roboto Condensed", sans-serif; }
+  .main_Ubicacion .div_Titulo_Ubicacion {
+    background: slategrey;
+    justify-content: center;
+    text-align: center;
+    display: block; }
+    .main_Ubicacion .div_Titulo_Ubicacion .titulo_Ubicacion {
+      font-size: 30px;
+      font-weight: bold;
+      color: white; }
+    .main_Ubicacion .div_Titulo_Ubicacion .p_Ubicacion {
+      font-size: 20px;
+      color: black; }
+  .main_Ubicacion .iframe_Ubicacion {
+    width: 90%; }
+
 /*footer*/
 .principal_Footer {
   grid-area: footer;
