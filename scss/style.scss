@@ -41,7 +41,6 @@ $fontLayout : 'Roboto Condensed', sans-serif;
     height: 100%;
 }
 
-
 /*grilla y header*/
 .grilla_Principal{
     display: grid;
@@ -64,13 +63,17 @@ $fontLayout : 'Roboto Condensed', sans-serif;
         font-family: $fontLayout;
     }
 
+    .li_Nav:hover{
+        color: rgb(46, 64, 224);
+        transition: 1s all;
+    }
+
     li{
         font-weight: bold;
-}
+    }
     .p_Menu{
-        @include styleFont (black);
-        background-color: rgb(16, 232, 240);
-        font-size: 25px;
+        @include styleFont (rgb(22, 22, 22));
+        font-size: 15px;
     }
 }
 
@@ -114,9 +117,9 @@ $fontLayout : 'Roboto Condensed', sans-serif;
 }
 
 .div_Producto:hover{
-    background-color: black;
+    background-color: rgba(180, 177, 177, 0.308);
     transition: 1s all;
-    border:black 2px solid;
+    border:rgb(2, 2, 2) 3px solid;
 }
 
 /*ofertas*/ 
@@ -250,29 +253,25 @@ $fontLayout : 'Roboto Condensed', sans-serif;
     font-family: $fontLayout;
 
     .div_Titulo_Ubicacion{
-        background: slategrey;
         justify-content: center;
         text-align: center;
         display: block;
 
         .titulo_Ubicacion{
-            font-size: 30px;
             font-weight: bold;
-            color: white;
+            color: rgb(255, 0, 0);
         }
 
         .p_Ubicacion{
-            font-size: 20px;
-            color: black;
+            color: rgb(248, 247, 247);
+        }
+        .span_Ubicacion{
+            color: rgb(255, 0, 0);
+            font-weight: bold;
         }
     }
-
-
-
-
-
         .iframe_Ubicacion{
-            width: 90%;
+            width: 95%;
         }
     
 }
@@ -282,17 +281,28 @@ $fontLayout : 'Roboto Condensed', sans-serif;
 .principal_Footer{
     grid-area: footer;
     font-family: $fontLayout;
-    height: 100%;
+    height: auto;
+    margin-top: 30px;
 
     .logo_Footer{
         width: 80px;
     }
+
+    .div_p{
+        text-align: center;
+    }
+
+    .ul_Redes{
+        height: 100%;
+    }
+
 }
 
 
 /*media queries*/
 @media only screen and (max-width:600px){
 
+    /*index*/
     .titulo_Index{
         font-size: 30px;
         
@@ -311,7 +321,7 @@ $fontLayout : 'Roboto Condensed', sans-serif;
     }
 
     .div_p{
-        font-size: 10.5px;
+        font-size: 16px;
     }
 
     /*ofertas*/
@@ -335,11 +345,26 @@ $fontLayout : 'Roboto Condensed', sans-serif;
         height: 50vh;
     }
 
+
+    /*ubicacion*/ 
+    .titulo_Ubicacion{
+        font-size: 30px;
+    }
+
+    .p_Ubicacion{
+        font-size: 20px;
+    }
+
+    .span_Ubicacion{
+        font-size: 30px;
+    }
 }
 
 
 
 @media only screen and (min-width:600px){
+
+    /*index*/
     .titulo_Index{
         @include fontTam(60px);
         padding: 20px;  
@@ -366,19 +391,32 @@ $fontLayout : 'Roboto Condensed', sans-serif;
     }
 
     /*ofertas*/
-.titulo_Ofertas{
-    font-size: 60px;
-    margin-top: 20px;
-}
+    .titulo_Ofertas{
+        font-size: 60px;
+        margin-top: 20px;
+    }
 
-.p_Titutlo_Ofertas{
-    font-size: 25px;
-    margin-bottom: 50px;
-}
+    .p_Titutlo_Ofertas{
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
 
-.div_Derecha{
-    background: url(../image/imageProduc/ofertas/prueb2.png);
-}
+    .div_Derecha{
+        background: url(../image/imageProduc/ofertas/prueb2.png);
+    }
+
+    /*ubicacion*/ 
+    .titulo_Ubicacion{
+        font-size: 50px;
+    }
+    
+    .p_Ubicacion{
+        font-size: 30px;
+    }
+    
+    .span_Ubicacion{
+        font-size: 50px;
+    }
 
 }
 

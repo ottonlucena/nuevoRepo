@@ -16,14 +16,16 @@
     width: 80px; }
   .grilla_Principal .ul_nav {
     font-family: "Roboto Condensed", sans-serif; }
+  .grilla_Principal .li_Nav:hover {
+    color: #2e40e0;
+    transition: 1s all; }
   .grilla_Principal li {
     font-weight: bold; }
   .grilla_Principal .p_Menu {
     font-family: "Roboto Condensed", sans-serif;
-    color: black;
+    color: #161616;
     font-weight: bold;
-    background-color: #10e8f0;
-    font-size: 25px; }
+    font-size: 15px; }
 
 /*main-index*/
 .principal_Main {
@@ -56,9 +58,9 @@
   background-color: #10e8f0; }
 
 .div_Producto:hover {
-  background-color: black;
+  background-color: rgba(180, 177, 177, 0.308);
   transition: 1s all;
-  border: black 2px solid; }
+  border: #020202 3px solid; }
 
 /*ofertas*/
 .main_Ofertas {
@@ -155,30 +157,36 @@
   grid-area: main;
   font-family: "Roboto Condensed", sans-serif; }
   .main_Ubicacion .div_Titulo_Ubicacion {
-    background: slategrey;
     justify-content: center;
     text-align: center;
     display: block; }
     .main_Ubicacion .div_Titulo_Ubicacion .titulo_Ubicacion {
-      font-size: 30px;
       font-weight: bold;
-      color: white; }
+      color: red; }
     .main_Ubicacion .div_Titulo_Ubicacion .p_Ubicacion {
-      font-size: 20px;
-      color: black; }
+      color: #f8f7f7; }
+    .main_Ubicacion .div_Titulo_Ubicacion .span_Ubicacion {
+      color: red;
+      font-weight: bold; }
   .main_Ubicacion .iframe_Ubicacion {
-    width: 90%; }
+    width: 95%; }
 
 /*footer*/
 .principal_Footer {
   grid-area: footer;
   font-family: "Roboto Condensed", sans-serif;
-  height: 100%; }
+  height: auto;
+  margin-top: 30px; }
   .principal_Footer .logo_Footer {
     width: 80px; }
+  .principal_Footer .div_p {
+    text-align: center; }
+  .principal_Footer .ul_Redes {
+    height: 100%; }
 
 /*media queries*/
 @media only screen and (max-width: 600px) {
+  /*index*/
   .titulo_Index {
     font-size: 30px; }
     .titulo_Index .subtitulo_Index {
@@ -190,7 +198,7 @@
   .titulo_Contacto {
     margin-top: 30px; }
   .div_p {
-    font-size: 10.5px; }
+    font-size: 16px; }
   /*ofertas*/
   .div_Izquierda {
     height: 50vh; }
@@ -203,9 +211,17 @@
       margin-bottom: 50px; }
   .div_Derecha {
     background: url(../image/imageProduc/ofertas/smalldivderecha.png);
-    height: 50vh; } }
+    height: 50vh; }
+  /*ubicacion*/
+  .titulo_Ubicacion {
+    font-size: 30px; }
+  .p_Ubicacion {
+    font-size: 20px; }
+  .span_Ubicacion {
+    font-size: 30px; } }
 
 @media only screen and (min-width: 600px) {
+  /*index*/
   .titulo_Index {
     font-size: 60px;
     padding: 20px; }
@@ -229,7 +245,14 @@
     font-size: 25px;
     margin-bottom: 50px; }
   .div_Derecha {
-    background: url(../image/imageProduc/ofertas/prueb2.png); } }
+    background: url(../image/imageProduc/ofertas/prueb2.png); }
+  /*ubicacion*/
+  .titulo_Ubicacion {
+    font-size: 50px; }
+  .p_Ubicacion {
+    font-size: 30px; }
+  .span_Ubicacion {
+    font-size: 50px; } }
 
 @media only screen and (min-width: 992px) {
   .imgCarousel {
