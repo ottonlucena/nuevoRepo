@@ -176,7 +176,7 @@
   grid-area: footer;
   font-family: "Roboto Condensed", sans-serif;
   height: auto;
-  margin-top: 30px; }
+  margin-top: 80px; }
   .principal_Footer .logo_Footer {
     width: 80px; }
   .principal_Footer .div_p {
@@ -218,7 +218,7 @@
   .p_Ubicacion {
     font-size: 20px; }
   .span_Ubicacion {
-    font-size: 30px; } }
+    font-size: 25px; } }
 
 @media only screen and (min-width: 600px) {
   /*index*/
