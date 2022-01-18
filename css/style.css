@@ -17,45 +17,50 @@
   .grilla_Principal .ul_nav {
     font-family: "Roboto Condensed", sans-serif; }
   .grilla_Principal .li_Nav:hover {
-    color: #2e40e0;
+    color: #00FFFF;
     transition: 1s all; }
   .grilla_Principal li {
     font-weight: bold; }
   .grilla_Principal .p_Menu {
     font-family: "Roboto Condensed", sans-serif;
-    color: #161616;
-    font-weight: bold;
+    color: white;
+    font-weight: 900;
     font-size: 15px; }
 
 /*main-index*/
 .principal_Main {
   grid-area: main; }
   .principal_Main .titulo_Index {
-    font-family: "Roboto Condensed", sans-serif; }
+    font-family: "Roboto Condensed", sans-serif;
+    color: white; }
   .principal_Main .span_Titulo {
-    color: red;
-    background-color: #10e8f0;
+    color: #273746;
+    background-color: #FFC300;
     display: inline-block; }
   .principal_Main .subtitulo_Index {
     font-family: "Roboto Condensed", sans-serif;
-    color: #e6d013;
-    font-weight: bold;
-    border: 3px solid; }
+    color: #FFC300;
+    font-weight: 900;
+    border: 3px solid;
+    background-color: black; }
   .principal_Main .titulo_Iframe {
     font-family: "Roboto Condensed", sans-serif; }
   .principal_Main .titulo_Section {
-    font-family: "Roboto Condensed", sans-serif; }
+    font-family: "Roboto Condensed", sans-serif;
+    color: #FFC300; }
   .principal_Main .card-effect:hover .card {
     transform: scale(0.6);
     transition: 3s all; }
 
 /*Productos*/
-.titulo_Productos {
-  font-weight: bold;
-  font-family: "Roboto Condensed", sans-serif;
-  color: black;
-  text-align: center;
-  background-color: #10e8f0; }
+.div_Producto {
+  height: 100%; }
+  .div_Producto .titulo_Productos {
+    font-weight: 900;
+    font-family: "Roboto Condensed", sans-serif;
+    color: black;
+    text-align: center;
+    background-color: #10e8f0; }
 
 .div_Producto:hover {
   background-color: rgba(180, 177, 177, 0.308);
@@ -83,7 +88,7 @@
         padding: 20px;
         color: white;
         border-radius: 30px;
-        font-weight: bold; }
+        font-weight: 700; }
     .main_Ofertas .pantalla_Dividida .div_Derecha {
       background-size: cover;
       background-position: center;
@@ -188,7 +193,8 @@
 @media only screen and (max-width: 600px) {
   /*index*/
   .titulo_Index {
-    font-size: 30px; }
+    font-size: 25px;
+    font-weight: 900; }
     .titulo_Index .subtitulo_Index {
       font-size: 30px; }
   /*contacto*/
@@ -224,7 +230,8 @@
   /*index*/
   .titulo_Index {
     font-size: 60px;
-    padding: 20px; }
+    padding: 20px;
+    font-weight: 900; }
     .titulo_Index .subtitulo_Index {
       font-size: 40px; }
   /*contacto*/

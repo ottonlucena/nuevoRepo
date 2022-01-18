@@ -10,7 +10,7 @@ $fontLayout : 'Roboto Condensed', sans-serif;
 @mixin styleFont($color, ) {
     font-family: $fontLayout;
     color: $color;
-    font-weight: bold;
+    font-weight: 900;
 }
 
 @mixin fontTam($fontMedia) {
@@ -18,7 +18,7 @@ $fontLayout : 'Roboto Condensed', sans-serif;
 }
 
 @mixin tituloProductos {
-    font-weight: bold;
+    font-weight: 900;
     font-family: $fontLayout;
     color: rgb(0, 0, 0);
     text-align: center;
@@ -31,7 +31,7 @@ $fontLayout : 'Roboto Condensed', sans-serif;
     padding: 20px;
     color: white;
     border-radius: 30px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 @mixin mainFlex {
@@ -64,7 +64,7 @@ $fontLayout : 'Roboto Condensed', sans-serif;
     }
 
     .li_Nav:hover{
-        color: rgb(46, 64, 224);
+        color: #00FFFF;
         transition: 1s all;
     }
 
@@ -72,7 +72,7 @@ $fontLayout : 'Roboto Condensed', sans-serif;
         font-weight: bold;
     }
     .p_Menu{
-        @include styleFont (rgb(22, 22, 22));
+        @include styleFont (rgb(255, 255, 255));
         font-size: 15px;
     }
 }
@@ -84,17 +84,19 @@ $fontLayout : 'Roboto Condensed', sans-serif;
 
     .titulo_Index{
         font-family: $fontLayout;
+        color: white;
     }
 
     .span_Titulo{
-        color: red;
-        background-color: rgb(16, 232, 240);
+        color:  #273746;
+        background-color:  #FFC300;
         display: inline-block;
     }
 
     .subtitulo_Index{
-        @include styleFont(#e6d013);
+        @include styleFont(#FFC300);
         border: 3px solid;
+        background-color: black;
     }
 
     .titulo_Iframe{
@@ -103,6 +105,7 @@ $fontLayout : 'Roboto Condensed', sans-serif;
 
     .titulo_Section{
         font-family: $fontLayout;
+        color: #FFC300;
     }
     
     .card-effect:hover .card{
@@ -112,8 +115,12 @@ $fontLayout : 'Roboto Condensed', sans-serif;
 }
 
 /*Productos*/
-.titulo_Productos{
-    @include tituloProductos;
+.div_Producto{
+    height: 100%;
+
+    .titulo_Productos{
+        @include tituloProductos;
+    }
 }
 
 .div_Producto:hover{
@@ -121,7 +128,6 @@ $fontLayout : 'Roboto Condensed', sans-serif;
     transition: 1s all;
     border:rgb(2, 2, 2) 3px solid;
 }
-
 
 /*ofertas*/ 
 .main_Ofertas{
@@ -277,7 +283,6 @@ $fontLayout : 'Roboto Condensed', sans-serif;
     
 }
 
-
 /*footer*/
 .principal_Footer{
     grid-area: footer;
@@ -305,8 +310,9 @@ $fontLayout : 'Roboto Condensed', sans-serif;
 
     /*index*/
     .titulo_Index{
-        font-size: 30px;
-        
+        font-size: 25px;
+        font-weight: 900;
+
         .subtitulo_Index{
             font-size: 30px;
         }
@@ -369,6 +375,7 @@ $fontLayout : 'Roboto Condensed', sans-serif;
     .titulo_Index{
         @include fontTam(60px);
         padding: 20px;  
+        font-weight: 900;
 
         .subtitulo_Index{
             font-size: 40px;
