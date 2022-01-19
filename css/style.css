@@ -12,6 +12,8 @@
   grid-template-areas: 'header header' 'nav nav' 'main main' 'footer footer'; }
   .grilla_Principal .principal_Header {
     grid-area: header; }
+    .grilla_Principal .principal_Header .nav_Menu {
+      background-color: #FFC300; }
   .grilla_Principal .img_Header {
     width: 80px; }
   .grilla_Principal .ul_nav {
@@ -23,7 +25,7 @@
     font-weight: bold; }
   .grilla_Principal .p_Menu {
     font-family: "Roboto Condensed", sans-serif;
-    color: white;
+    color: #0c0c0c;
     font-weight: 900;
     font-size: 15px; }
 
@@ -32,7 +34,7 @@
   grid-area: main; }
   .principal_Main .titulo_Index {
     font-family: "Roboto Condensed", sans-serif;
-    color: white; }
+    color: black; }
   .principal_Main .span_Titulo {
     color: #273746;
     background-color: #FFC300;
@@ -41,7 +43,6 @@
     font-family: "Roboto Condensed", sans-serif;
     color: #FFC300;
     font-weight: 900;
-    border: 3px solid;
     background-color: black; }
   .principal_Main .titulo_Iframe {
     font-family: "Roboto Condensed", sans-serif; }
@@ -193,10 +194,10 @@
 @media only screen and (max-width: 600px) {
   /*index*/
   .titulo_Index {
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 900; }
     .titulo_Index .subtitulo_Index {
-      font-size: 30px; }
+      font-size: 20vw; }
   /*contacto*/
   .span_Titulo {
     display: inline-block;
@@ -229,15 +230,13 @@
 @media only screen and (min-width: 600px) {
   /*index*/
   .titulo_Index {
-    font-size: 60px;
+    font-size: 5vw;
     padding: 20px;
     font-weight: 900; }
-    .titulo_Index .subtitulo_Index {
-      font-size: 40px; }
   /*contacto*/
   .span_Titulo {
     display: inline-block;
-    font-size: 60px; }
+    font-size: 10vw; }
   .titulo_Contacto {
     margin-top: 50px; }
   .imgCarousel {

@@ -53,6 +53,10 @@ $fontLayout : 'Roboto Condensed', sans-serif;
 
     .principal_Header{
         grid-area: header;
+
+        .nav_Menu{
+            background-color: #FFC300;
+        }
     }
 
     .img_Header{
@@ -72,7 +76,7 @@ $fontLayout : 'Roboto Condensed', sans-serif;
         font-weight: bold;
     }
     .p_Menu{
-        @include styleFont (rgb(255, 255, 255));
+        @include styleFont (rgb(12, 12, 12));
         font-size: 15px;
     }
 }
@@ -84,7 +88,7 @@ $fontLayout : 'Roboto Condensed', sans-serif;
 
     .titulo_Index{
         font-family: $fontLayout;
-        color: white;
+        color: black;
     }
 
     .span_Titulo{
@@ -95,7 +99,6 @@ $fontLayout : 'Roboto Condensed', sans-serif;
 
     .subtitulo_Index{
         @include styleFont(#FFC300);
-        border: 3px solid;
         background-color: black;
     }
 
@@ -310,11 +313,11 @@ $fontLayout : 'Roboto Condensed', sans-serif;
 
     /*index*/
     .titulo_Index{
-        font-size: 25px;
+        font-size: 28px;
         font-weight: 900;
 
         .subtitulo_Index{
-            font-size: 30px;
+            font-size: 20vw;
         }
     }
 
@@ -373,19 +376,15 @@ $fontLayout : 'Roboto Condensed', sans-serif;
 
     /*index*/
     .titulo_Index{
-        @include fontTam(60px);
+        @include fontTam(5vw);
         padding: 20px;  
         font-weight: 900;
-
-        .subtitulo_Index{
-            font-size: 40px;
-        }
     }
 
     /*contacto*/ 
     .span_Titulo{
         display:inline-block;
-        @include fontTam(60px);
+        @include fontTam(10vw);
     }
     .titulo_Contacto{
         margin-top: 50px;
