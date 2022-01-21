@@ -15,7 +15,7 @@
     .grilla_Principal .principal_Header .nav_Menu {
       background-color: #FFC300; }
   .grilla_Principal .img_Header {
-    width: 80px; }
+    width: 60px; }
   .grilla_Principal .ul_nav {
     font-family: "Roboto Condensed", sans-serif; }
   .grilla_Principal .li_Nav:hover {
@@ -55,18 +55,22 @@
 
 /*Productos*/
 .div_Producto {
-  height: 100%; }
+  height: 100%;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer; }
   .div_Producto .titulo_Productos {
     font-weight: 900;
     font-family: "Roboto Condensed", sans-serif;
-    color: black;
+    color: #110000;
     text-align: center;
-    background-color: #10e8f0; }
+    background-color: #FFC300; }
 
 .div_Producto:hover {
-  background-color: rgba(180, 177, 177, 0.308);
-  transition: 1s all;
-  border: #020202 3px solid; }
+  background-color: rgba(116, 112, 112, 0.308);
+  transition: 400ms all;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%); }
 
 /*ofertas*/
 .main_Ofertas {
@@ -78,16 +82,19 @@
     display: flex;
     width: 100%; }
     .main_Ofertas .pantalla_Dividida .div_Izquierda {
-      background: #FCD21D;
+      background: #9db3db;
       width: 50%;
       text-align: center; }
+      .main_Ofertas .pantalla_Dividida .div_Izquierda .titulo_Ofertas {
+        font-weight: 900; }
       .main_Ofertas .pantalla_Dividida .div_Izquierda .span_Ofertas {
-        color: white; }
+        color: #FFC300;
+        border-bottom: 2px solid #FFC300; }
       .main_Ofertas .pantalla_Dividida .div_Izquierda .ir_Ofertas {
         text-decoration: none;
         border: 4px solid white;
         padding: 20px;
-        color: white;
+        color: #FFC300;
         border-radius: 30px;
         font-weight: 700; }
     .main_Ofertas .pantalla_Dividida .div_Derecha {
@@ -168,11 +175,11 @@
     display: block; }
     .main_Ubicacion .div_Titulo_Ubicacion .titulo_Ubicacion {
       font-weight: bold;
-      color: red; }
+      color: #B70E21; }
     .main_Ubicacion .div_Titulo_Ubicacion .p_Ubicacion {
-      color: #f8f7f7; }
+      color: black; }
     .main_Ubicacion .div_Titulo_Ubicacion .span_Ubicacion {
-      color: red;
+      color: #B70E21;
       font-weight: bold; }
   .main_Ubicacion .iframe_Ubicacion {
     width: 95%; }
@@ -210,12 +217,13 @@
   .div_Izquierda {
     height: 50vh; }
     .div_Izquierda .titulo_Ofertas {
-      font-size: 30px;
       margin-top: 20px;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      font-weight: 900; }
     .div_Izquierda .p_Titutlo_Ofertas {
       font-size: 15px;
-      margin-bottom: 50px; }
+      margin-bottom: 50px;
+      font-weight: 500; }
   .div_Derecha {
     background: url(../image/imageProduc/ofertas/smalldivderecha.png);
     height: 50vh; }
@@ -245,7 +253,6 @@
     font-size: 20px; }
   /*ofertas*/
   .titulo_Ofertas {
-    font-size: 60px;
     margin-top: 20px; }
   .p_Titutlo_Ofertas {
     font-size: 25px;
@@ -268,7 +275,8 @@
     width: 70vh; }
     .div_Izquierda .titulo_Ofertas {
       margin-top: 20px;
-      margin-bottom: 80px; }
+      margin-bottom: 80px;
+      font-weight: 900; }
     .div_Izquierda .p_Titutlo_Ofertas {
       font-size: 35px;
       margin-bottom: 80px; }
