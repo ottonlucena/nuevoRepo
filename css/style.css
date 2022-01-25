@@ -19,8 +19,8 @@
   .grilla_Principal .ul_nav {
     font-family: "Roboto Condensed", sans-serif; }
   .grilla_Principal .li_Nav:hover {
-    color: #00FFFF;
-    transition: 1s all; }
+    color: #eeebda;
+    transition: 3ms all; }
   .grilla_Principal li {
     font-weight: bold; }
   .grilla_Principal .p_Menu {
@@ -196,6 +196,8 @@
     text-align: center; }
   .principal_Footer .ul_Redes {
     height: 100%; }
+  .principal_Footer .pie_Footer {
+    background-color: #FFC300; }
 
 /*media queries*/
 @media only screen and (max-width: 600px) {

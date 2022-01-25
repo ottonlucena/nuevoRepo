@@ -68,8 +68,8 @@ $fontLayout : 'Roboto Condensed', sans-serif;
     }
 
     .li_Nav:hover{
-        color: #00FFFF;
-        transition: 1s all;
+        color: #eeebda;
+        transition: 3ms all;
     }
 
     li{
@@ -312,6 +312,10 @@ $fontLayout : 'Roboto Condensed', sans-serif;
 
     .ul_Redes{
         height: 100%;
+    }
+
+    .pie_Footer{
+        background-color: #FFC300;
     }
 
 }
